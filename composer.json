@@ -13,7 +13,7 @@
     "require": {
         "php": "^5.6|^7.0",
         "symfony/framework-bundle": "^2.7|^3.0",
-        "egeloen/google-map": "^2.0.2"
+        "egeloen/google-map": "dev-static-api-loader"
     },
     "require-dev": {
         "egeloen/serializer-bundle": "^1.0",
@@ -29,6 +29,12 @@
         "symfony/yaml": "^2.7|^3.0",
         "twig/twig": "^1.18"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/guillemfondin/ivory-google-map.git"
+        }
+    ],
     "autoload": {
         "psr-4": { "Ivory\\GoogleMapBundle\\": "" }
     },
